@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from 'next/link';
 
 export default function Header() {
   return (
@@ -15,10 +15,13 @@ export default function Header() {
         <Link href="/order">
           <a className="btn btn-link">Order</a>
         </Link>
-        <a href="#" className="btn btn-link">Hiring!</a>
-        <a href="#" className="btn btn-link">Contact us!</a>
-      </div> 
+        <Link href="/hiring">
+          <a className="btn btn-link">Hiring!</a>
+        </Link>
+        <Link href="/contact-us">
+          <a className="btn btn-link">Contact us!</a>
+        </Link>
+      </div>
     </header>
-
-  )
+  );
 }
